@@ -7,7 +7,7 @@ if [ -n "${INPUT_SCANARGUMENTS}" ]; then
   args="${INPUT_SCANARGUMENTS}" # Overwrite if new options string is provided
 fi
 
-githubRepo="git@github.com:davy2201/$GITHUB_REPOSITORY"
+githubRepo="git@github.com/$GITHUB_REPOSITORY"
 
 query="$args $githubRepo" # Build args query with repository url
 trufflehog $args
