@@ -15,3 +15,4 @@ fi
 
 query="$args $githubRepo" # Build args query with repository url
 trufflehog $query
+trufflehog_output="trufflehog $query | cat"
