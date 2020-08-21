@@ -15,5 +15,5 @@ fi
 
 query="$args $githubRepo" # Build args query with repository url
 trufflehog $query
-export trufflehog_ouput = "Salut"
+MA_VARIABLE="plop"
 
