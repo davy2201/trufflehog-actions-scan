@@ -15,4 +15,5 @@ fi
 
 query="$args $githubRepo" # Build args query with repository url
 trufflehog $query
-trufflehog_output="trufflehog $query | cat"
+echo “::set-env name=TRUFFLEHOG_OUPUT::$(trufflehog $query | cat)”
+TRUFFLEHOG_OUPUT="trufflehog $query | cat"
